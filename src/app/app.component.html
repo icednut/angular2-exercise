@@ -1,0 +1,5 @@
+<my-toolbar [currentMenuSubTitle]="menuSubTitle"></my-toolbar>
+
+<div style="padding:10px;">
+  <router-outlet (changeSubTitleEvent)="onChangeSubTitle($event)"></router-outlet>
+</div>
