@@ -14,7 +14,6 @@ export class TabMenuComponent implements OnInit {
   constructor(private myToolbarService: MyToolbarService) { }
 
   ngOnInit() {
-    this.myToolbarService.setSubTitle("tab-menu's subtitle");
+    this.myToolbarService.setSubTitle("탭에서 모델 다루기 연습");
   }
-
 }
