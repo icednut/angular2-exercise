@@ -13,7 +13,6 @@ import { TabMenuComponent } from './tab-menu/tab-menu.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FirstTabComponent } from './tab-menu/first-tab/first-tab.component';
 import { SecondTabComponent } from './tab-menu/second-tab/second-tab.component';
-import { ThirdTabComponent } from './tab-menu/third-tab/third-tab.component';
 
 const appRoutes: Routes = [
   {path: 'menu1', component: Menu1Component},
@@ -32,8 +31,7 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     TabMenuComponent,
     FirstTabComponent,
-    SecondTabComponent,
-    ThirdTabComponent
+    SecondTabComponent
   ],
   imports: [
     BrowserModule,

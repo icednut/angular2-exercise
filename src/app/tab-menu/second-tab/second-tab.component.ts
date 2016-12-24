@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SecondTabForm } from '../secondTabForm';
 
 @Component({
   selector: 'second-tab',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./second-tab.component.css']
 })
 export class SecondTabComponent implements OnInit {
+
+  @Input()
+  childForm: SecondTabForm;
 
   constructor() { }
 

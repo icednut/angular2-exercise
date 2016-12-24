@@ -7,7 +7,7 @@
   <div class="col-md-10" style="padding:0;">
     <div class="form-group">
       <label for="personCount">예약 인원</label>
-      <select class="form-control" id="personCount">
+      <select class="form-control" id="personCount" [(ngModel)]="childForm.count">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -17,7 +17,7 @@
     </div>
     <div class="form-group">
       <label for="groupName">모임명</label>
-      <input type="email" class="form-control" id="groupName">
+      <input type="email" class="form-control" id="groupName" [(ngModel)]="childForm.groupName">
     </div>
   </div>
   <div class="col-md-1" style="padding:0;text-align:center;">
