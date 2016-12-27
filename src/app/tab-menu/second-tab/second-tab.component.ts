@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SecondTabForm } from '../secondTabForm';
+import { FormService } from '../formService';
 
 @Component({
   selector: 'second-tab',
@@ -9,11 +10,14 @@ import { SecondTabForm } from '../secondTabForm';
 export class SecondTabComponent implements OnInit {
 
   @Input()
-  childForm: SecondTabForm;
+  childForm: SecondTabForm = new SecondTabForm();
 
-  constructor() { }
+  constructor(private formService: FormService) { }
 
   ngOnInit() {
+    this.formService.onSelectSecondForm(eventBody => {
+      eventBody(this.childForm);
+    });
   }
 
 }

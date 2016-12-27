@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {MyToolbarService} from './my-toolbar.service';
+import { MyToolbarService } from './my-toolbar.service';
+import { FormService } from './tab-menu/formService';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [MyToolbarService]
+  providers: [MyToolbarService, FormService]
 })
 export class AppComponent {
   menuSubTitle;
